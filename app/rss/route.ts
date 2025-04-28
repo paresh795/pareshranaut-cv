@@ -1,10 +1,12 @@
 import { baseUrl } from 'app/sitemap'
-import { getBlogPosts } from 'app/blog/utils'
+// import { getBlogPosts } from 'app/blog/utils'
 
 export async function GET() {
-  let allBlogs = await getBlogPosts()
+  // let allBlogs = await getBlogPosts()
 
-  const itemsXml = allBlogs
+  const itemsXml = ''
+    /*
+    allBlogs
     .sort((a, b) => {
       if (new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)) {
         return -1
@@ -23,13 +25,14 @@ export async function GET() {
         </item>`
     )
     .join('\n')
+    */
 
   const rssFeed = `<?xml version="1.0" encoding="UTF-8" ?>
   <rss version="2.0">
     <channel>
-        <title>My Portfolio</title>
+        <title>Paresh Ranaut - Portfolio</title>
         <link>${baseUrl}</link>
-        <description>This is my portfolio RSS feed</description>
+        <description>Thoughts and projects by Paresh Ranaut</description>
         ${itemsXml}
     </channel>
   </rss>`
