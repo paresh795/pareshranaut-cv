@@ -5,16 +5,17 @@
 export const baseUrl = 'https://pareshranaut-cv.vercel.app' 
 
 export default async function sitemap() {
-  // Remove the dynamic blog post generation
-  /*
-  let blogs = getBlogPosts().map((post) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: post.metadata.publishedAt,
-  }))
-  */
+  // Removed dynamic blog post generation
 
-  // Define static routes
-  let routes = ['', '/blog', '/projects'].map((route) => ({
+  // Define static routes including the new blog post pages
+  let routes = [
+    '',
+    '/blog',
+    '/projects',
+    '/blog/antifragile', 
+    '/blog/execution-vs-ideas',
+    '/blog/so-arm100-robotics'
+  ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date().toISOString().split('T')[0],
   }))

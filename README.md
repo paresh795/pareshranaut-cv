@@ -1,36 +1,37 @@
-# Portfolio Blog Starter
+# Paresh Ranaut - AI Engineer & Builder Portfolio
 
-This is a porfolio site template complete with a blog. Includes:
+This repository contains the source code for Paresh Ranaut's personal portfolio website, built using Next.js, TypeScript, and Tailwind CSS. 
 
-- MDX and Markdown support
-- Optimized for SEO (sitemap, robots, JSON-LD schema)
-- RSS Feed
-- Dynamic OG images
-- Syntax highlighting
-- Tailwind v4
-- Vercel Speed Insights / Web Analytics
-- Geist font
+The site showcases projects and thoughts focused on AI/ML development, including LLMs, RAG, agentic workflows, and automation.
 
-## Demo
+## Key Features & Technologies
 
-https://portfolio-blog-starter.vercel.app
+- Built with [Next.js](https://nextjs.org/) (App Router)
+- Styled with [Tailwind CSS](https://tailwindcss.com/) & [shadcn/ui](https://ui.shadcn.com/)
+- Written in [TypeScript](https://www.typescriptlang.org/)
+- Static blog generation for thoughts and project deep-dives
+- Project showcase with detailed descriptions and links
+- Optimized for SEO (sitemap, metadata)
+- Deployed on [Vercel](https://vercel.com)
 
-## How to Use
+## Live Site
 
-You can choose from one of the following two methods to use this repository:
+[https://pareshranaut-cv.vercel.app](https://pareshranaut-cv.vercel.app) 
 
-### One-Click Deploy
+## Development Setup
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/solutions/blog&project-name=blog&repository-name=blog)
+You can clone and run this project locally:
 
 ### Clone and Deploy
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [pnpm](https://pnpm.io/installation) to bootstrap the example:
+Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [pnpm](https://pnpm.io/installation) to bootstrap the example (or simply clone this repo):
 
 ```bash
-pnpm create next-app --example https://github.com/vercel/examples/tree/main/solutions/blog blog
+pnpm create next-app --example https://github.com/paresh795/pareshranaut-cv my-portfolio
+# or
+git clone https://github.com/paresh795/pareshranaut-cv.git
+cd pareshranaut-cv
+pnpm install
 ```
 
 Then, run Next.js in development mode:
@@ -39,4 +40,10 @@ Then, run Next.js in development mode:
 pnpm dev
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/templates) ([Documentation](https://nextjs.org/docs/app/building-your-application/deploying)).
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Deployment
+
+The site is deployed using [Vercel](https://vercel.com/templates). You can deploy your own version by clicking the button below:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/paresh795/pareshranaut-cv&project-name=portfolio&repository-name=my-portfolio)

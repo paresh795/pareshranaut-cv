@@ -58,6 +58,13 @@ const projects = [
     techStack: ['n8n', 'Telegram API', 'OpenAI Vision API / OCR', 'Google Sheets API', 'Google Drive API', 'Workflow Automation'],
     videoUrl: 'https://www.youtube.com/watch?v=VU4Kc1nIblc',
   },
+  {
+    title: 'Context-Aware Product Video Generator (n8n)',
+    category: 'Automation Workflow / AI Video',
+    description: 'Context-aware n8n workflow generating short vertical videos (Shorts/Reels) from a product idea. Uses Gemini 2.5, PiAPI/Kling Elements, ElevenLabs, and Creatomate.',
+    techStack: ['n8n', 'Gemini 2.5', 'PiAPI (Kling, Flux)', 'ElevenLabs API', 'Creatomate API', 'Google Drive/Sheets', 'AI Planning', 'Multi-Modal AI'],
+    videoUrl: 'https://youtu.be/QibN5tnQU3Q',
+  },
 ];
 
 export default function ProjectsPage() {

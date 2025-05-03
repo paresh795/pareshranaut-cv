@@ -32,6 +32,13 @@ const featuredProjects = [
     techStack: ['n8n', 'Telegram API', 'OpenAI Vision API / OCR', 'Google Sheets API', 'Google Drive API', 'Workflow Automation'],
     videoUrl: 'https://www.youtube.com/watch?v=VU4Kc1nIblc',
   },
+  {
+    title: 'Context-Aware Product Video Generator (n8n)',
+    category: 'Automation Workflow / AI Video',
+    description: 'Context-aware n8n workflow generating short vertical videos (Shorts/Reels) from a product idea. Uses Gemini 2.5, PiAPI/Kling Elements, ElevenLabs, and Creatomate.',
+    techStack: ['n8n', 'Gemini 2.5', 'PiAPI (Kling, Flux)', 'ElevenLabs API', 'Creatomate API', 'Google Drive/Sheets', 'AI Planning', 'Multi-Modal AI'],
+    videoUrl: 'https://youtu.be/QibN5tnQU3Q',
+  },
 ]
 
 // Certifications Data (from PRD)
@@ -44,6 +51,22 @@ const certifications = [
   { name: 'Python for Data Science, AI & Development', issuer: 'IBM', date: 'May 2023' },
   { name: 'Certified Solidworks Professional', issuer: 'Dassault Systèmes', date: 'Dec 2020' },
 ]
+
+// Define blog post data for links
+const blogPosts = [
+  {
+      id: 'so-arm100-robotics',
+      title: 'Diving Headfirst into Robotics: Building the SO-ARM100 (and Why You Should Too)',
+  },
+  {
+      id: 'execution-vs-ideas',
+      title: 'Million-Dollar Execution Beats Million-Dollar Ideas',
+  },
+  {
+      id: 'antifragile',
+      title: 'Stop Trying to Make Your Code Unbreakable. Make It Antifragile.',
+  },
+];
 
 export default function Page() {
   return (
@@ -116,16 +139,13 @@ export default function Page() {
           Recent Thoughts
         </h2>
         <ul className="list-none space-y-1">
-          <li>
-            <Link href="/blog#antifragile" className="text-sm text-neutral-500 dark:text-neutral-400 hover:text-neutral-700 dark:hover:text-neutral-200 transition-colors">
-              Stop Trying to Make Your Code Unbreakable. Make It Antifragile.
-            </Link>
-          </li>
-           <li>
-            <Link href="/blog#execution-vs-ideas" className="text-sm text-neutral-500 dark:text-neutral-400 hover:text-neutral-700 dark:hover:text-neutral-200 transition-colors">
-              Million-Dollar Execution Beats Million-Dollar Ideas
-            </Link>
-          </li>
+          {blogPosts.map(post => (
+             <li key={post.id}>
+              <Link href={`/blog/${post.id}`} className="text-sm text-neutral-500 dark:text-neutral-400 hover:text-neutral-700 dark:hover:text-neutral-200 transition-colors">
+                {post.title}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
     </section>

@@ -44,6 +44,9 @@
         *   **Invoice Processing Agent (n8n):** ([Demo Video](https://www.youtube.com/watch?v=VU4Kc1nIblc))
             *   _Description:_ Automates invoice data extraction and processing workflow. Receives invoices via Telegram, uses AI (Vision/OCR) for data extraction, verifies with user, records payment details, updates Google Sheets DB, and archives files to Google Drive.
             *   _Tech:_ n8n, Telegram API, OpenAI Vision API / OCR, Google Sheets API, Google Drive API, Workflow Automation.
+        *   **Context-Aware Product Video Generator (n8n):** ([Demo Video](https://youtu.be/QibN5tnQU3Q))
+            *   _Description:_ Context-aware n8n workflow generating short vertical videos (Shorts/Reels) from a product idea. Uses Gemini 2.5 for storyboarding, PiAPI/Kling Elements for consistent video generation, ElevenLabs for audio, and Creatomate for final assembly.
+            *   _Tech:_ n8n, Gemini 2.5 (OpenRouter), PiAPI (Kling Elements, Flux), ElevenLabs API, Creatomate API, Google Drive/Sheets, AI Planning, Multi-Modal AI.
 *   **Navigation:**
     *   Simplified navigation (e.g., Home, Projects, Blog/About).
     *   Links should accurately reflect site structure.

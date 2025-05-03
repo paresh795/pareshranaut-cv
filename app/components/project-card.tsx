@@ -18,7 +18,7 @@ export function ProjectCard({ title, description, techStack, githubUrl, demoUrl,
           {category}
         </span>
       )}
-      <h3 className="text-lg font-semibold mb-2 mr-16">{title}</h3>
+      <h3 className="text-lg font-semibold mb-2 mr-20">{title}</h3>
       <p className="text-neutral-400 dark:text-neutral-400 mb-3 text-sm">
         {description}
       </p>
